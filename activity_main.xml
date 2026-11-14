@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frameless Shortcut Maker"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="App / Shortcut Name (e.g. TradingView)"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Website URL (e.g. https://in.tradingview.com)"
+        android:inputType="textUri"
+        android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:id="@+id/cbUseQuetta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quetta Browser में खोलें (अगर उपलब्ध हो)"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnCreateShortcut"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Create Home Screen Shortcut" />
+
+</LinearLayout>
